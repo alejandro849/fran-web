@@ -1,5 +1,10 @@
 {
     "editor.wordWrap": "on",
     "editor.rulers": [],
+    "github.copilot.enable": {
+        "css": true,
+        "html": true,
+        "javascript": true
+    },
     // Other settings...
 }
