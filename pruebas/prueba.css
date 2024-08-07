@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Color azul celeste */
+}
+
+header {
+    background-color: #000000;
+    color: #FFD700; /* Color dorado */
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.logo img {
+    max-height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #FFD700; /* Borde dorado */
+}
+
+.shop {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    color: #000000; /* Color dorado */
+    background-color: #fff;
+}
+
+.shop img {
+    max-height: 30px;
+    margin-right: 0.5rem;
+}
+
+nav {
+    background-color: #000; /* Fondo negro puro */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    color: #FFD700; /* Color base dorado */
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    font-size: 2rem; /* Incrementar el tamaño de la fuente */
+    font-style: italic; /* Letras cursivas */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    background: linear-gradient(to right, #FFD700, #FFB14E, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav a:hover {
+    background-color: #555; /* Color más claro */
+    color: #fff;
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700; /* Color dorado */
+}
+
+.hero-content h1 {
+    font-size: 6rem; /* Tamaño de fuente más grande */
+    margin: 0;
+    color: #d4af37; /* Color dorado base */
+    text-shadow: 
+        1px 1px 2px #000, /* Sombra negra */
+        0 0 25px #ffd700, /* Resplandor dorado */
+        0 0 5px #ffd700, /* Resplandor dorado más pequeño */
+        1px 1px 2px #b8860b, /* Sombra dorada oscura */
+        1px 1px 2px #fff; /* Sombra blanca para dar brillo */
+}
+
+
+
+.novedades {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #FFD700; /* Color dorado */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

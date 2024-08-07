@@ -1,3 +1,22 @@
+body {
+    background-color: black;
+    color: gold;
+}
+.fran-f{
+    border-radius: 50%;
+}
+
+
+
+
+a{
+    color: gold;
+}
+
+.ul{
+    display: flex; justify-content: space-between;
+    
+}
 .buttons {
     display: flex;
     flex-direction: column;
@@ -12,3 +31,4 @@
     border: none; /* Elimina cualquier borde */
     box-shadow: none; /* Elimina cualquier sombra */
 }
+
