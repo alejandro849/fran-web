@@ -2,26 +2,60 @@ body {
     background-color: black;
     color: gold;
 }
+/* .container {
+    display: flex;
+    align-items: center;
+} */
 
-.photo {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+}
+.photo {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
 }
 
 
 .fran-f{
     border-radius: 50%;
-    display: flex;
+    display: inline-block;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    
+     */
+}
+.fran-nombre {
+    font-size: 34px;
+    margin-top: 10px;
+    font-family: 'Alex Brush',cursive;
+    margin-left: 70px;
+    /* text-align: center; */
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear el contenido al inicio (izquierda) */
+    text-align: center;
+}
+.subtitle {
+    font-size: 100px; /* Ajusta el tamaño de fuente según sea necesario */
+    color: #FF1493; /* Color de la fuente */
+    text-align: center;
+    /* text-transform: uppercase; */
+    /* font-weight: bold; */
+    font-family: 'Playfair Display', serif;
+    position: relative; /* Para poder posicionar la línea */
+    -webkit-text-stroke: 1px white; /* Borde blanco alrededor del texto */
 }
 .title {
     font-size: 24px; /* Adjust the font size */
     margin-top: 10px; /* Space between image and title */
-    text-align: center;
+    
+    /* text-align: center; */
 }
 
 
@@ -30,14 +64,15 @@ body {
 a{
     color: rgb(255, 0, 251);
 }
-.ul li {
-    color: rgb(234, 0, 255); /* Change the color of the word */
-    list-style: url('bullet.png') rgb(234, 0, 255); /* Change the color of the dot */
-    font-size: 20px; /* Increase the font size */
-}
-.ul{
-    display: flex; justify-content: space-between;
+
     
+.navigation button {
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove borders */
+    font-size: 20px; /* Increase font size */
+    color: inherit; /* Inherit text color from parent */
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 10px 20px; /* Add some padding */
 }
 .buttons {
     display: flex;
