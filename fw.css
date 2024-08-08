@@ -41,46 +41,64 @@ body {
     align-items: flex-start; /* Alinear el contenido al inicio (izquierda) */
     text-align: center;
 }
+
 .subtitle {
-    font-size: 100px; /* Ajusta el tamaño de fuente según sea necesario */
+    font-size: 80px; /* Ajusta el tamaño de fuente según sea necesario */
     color: #FF1493; /* Color de la fuente */
     text-align: center;
-    /* text-transform: uppercase; */
-    /* font-weight: bold; */
     font-family: 'Playfair Display', serif;
     position: relative; /* Para poder posicionar la línea */
-    -webkit-text-stroke: 1px white; /* Borde blanco alrededor del texto */
+    -webkit-text-stroke: 0.5px white; /* Borde blanco alrededor del texto */
 }
+
+.subtitle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60%; /* Ajusta este valor para mover la línea más abajo */
+    border-top: 1px solid white; /* Ajusta el color y grosor de la línea */
+    transform: translateY(-50%);
+}
+
+
 .title {
-    font-size: 24px; /* Adjust the font size */
+    font-size: 34px; /* Adjust the font size */
+    font-family: 'Alex Brush',cursive;
     margin-top: 10px; /* Space between image and title */
-    
+    margin-left: 100px;
     /* text-align: center; */
 }
 
 
-
-
-a{
+/* a{
     color: rgb(255, 0, 251);
-}
+} */
 
     
 .navigation button {
-    background-color: transparent; /* Remove background color */
-    border: none; /* Remove borders */
+    background-color: gray; /* Remove background color */
+    color: rgb(255, 0, 251);
+    /* border: none; Remove borders */
     font-size: 20px; /* Increase font size */
-    color: inherit; /* Inherit text color from parent */
+    /* color: inherit; Inherit text color from parent */
     cursor: pointer; /* Change cursor to pointer */
     padding: 10px 20px; /* Add some padding */
 }
-.buttons {
+.navigation-a:hover {
+    background-color: gold;
+    color: black;
+    border-radius: 10px; /* Añadir redondeo para el efecto hover */
+    height: 20px;
+    width: 60px;
+}
+.logos {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.button img {
+.logo img {
     display: block;
     max-width: 100%;
     height: auto;
