@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background: linear-gradient(to right, black, rgb(86, 0, 139));
     color: gold;
 }
 /* .container {
@@ -82,22 +82,25 @@ body {
     margin-top: 20px;
     gap: 10px; /* Espacio entre botones */
 }
-
 .nav-button {
     background-color: gray; /* Color de fondo */
     color: rgb(255, 0, 251); /* Color del texto */
     border: 2px solid rgb(255, 0, 251); /* Borde del botón */
+    border-radius: 5px; /* Redondear los bordes */
     font-size: 20px; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor a pointer */
     padding: 10px 20px; /* Añadir padding */
     transition: all 0.3s ease; /* Transición suave para el efecto hover */
+    
 }
-
 .nav-button:hover {
     background-color: rgb(255, 0, 251); /* Color de fondo al hacer hover */
     color: gray; /* Color del texto al hacer hover */
-    border-radius: 5px; /* Añadir redondeo para el efecto hover */
+     /* Añadir redondeo para el efecto hover */
 }
+
+
+
 .logos {
     display: flex;
     flex-direction: column;
