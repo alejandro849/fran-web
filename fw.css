@@ -72,25 +72,31 @@ body {
 
 
 /* a{
-    color: rgb(255, 0, 251);
+    margin-left: 10px;
 } */
 
     
-.navigation button {
-    background-color: gray; /* Remove background color */
-    color: rgb(255, 0, 251);
-    /* border: none; Remove borders */
-    font-size: 20px; /* Increase font size */
-    /* color: inherit; Inherit text color from parent */
-    cursor: pointer; /* Change cursor to pointer */
-    padding: 10px 20px; /* Add some padding */
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px; /* Espacio entre botones */
 }
-.navigation-a:hover {
-    background-color: gold;
-    color: black;
-    border-radius: 10px; /* Añadir redondeo para el efecto hover */
-    height: 20px;
-    width: 60px;
+
+.nav-button {
+    background-color: gray; /* Color de fondo */
+    color: rgb(255, 0, 251); /* Color del texto */
+    border: 2px solid rgb(255, 0, 251); /* Borde del botón */
+    font-size: 20px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    padding: 10px 20px; /* Añadir padding */
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.nav-button:hover {
+    background-color: rgb(255, 0, 251); /* Color de fondo al hacer hover */
+    color: gray; /* Color del texto al hacer hover */
+    border-radius: 5px; /* Añadir redondeo para el efecto hover */
 }
 .logos {
     display: flex;
