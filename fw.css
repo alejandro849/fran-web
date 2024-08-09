@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(to right, black, rgb(86, 0, 139));
-    color: gold;
+    background: linear-gradient(to right, black, rgb(35, 0, 139));
+    color: rgba(255, 225, 0, 0.772);
 }
 /* .container {
     display: flex;
@@ -35,6 +35,19 @@ body {
     margin-left: 70px;
     /* text-align: center; */
 }
+.grow-p{
+    font-family: 'Noto Serif Georgian', serif;
+    font-weight: 600;
+    margin-left: 60px;
+    font-size: 25px;
+}
+.fitness-e{
+    font-family: 'Noto Serif Georgian', serif;
+    font-weight: 600;
+    margin-left: 60px;
+    font-size: 25px;
+}
+
 .title-container {
     display: flex;
     flex-direction: column;
@@ -83,9 +96,9 @@ body {
     gap: 10px; /* Espacio entre botones */
 }
 .nav-button {
-    background-color: gray; /* Color de fondo */
+    background-color: transparent; /* Color de fondo */
     color: rgb(255, 0, 251); /* Color del texto */
-    border: 2px solid rgb(255, 0, 251); /* Borde del botón */
+    border: 0; /* Borde del botón */
     border-radius: 5px; /* Redondear los bordes */
     font-size: 20px; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor a pointer */
@@ -95,7 +108,7 @@ body {
 }
 .nav-button:hover {
     background-color: rgb(255, 0, 251); /* Color de fondo al hacer hover */
-    color: gray; /* Color del texto al hacer hover */
+    color: rgb(18, 21, 215); /* Color del texto al hacer hover */
      /* Añadir redondeo para el efecto hover */
 }
 
